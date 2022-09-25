@@ -4,10 +4,38 @@
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+        <style>
+            .navbar-nav{
+                margin-left: auto;
+            }
+            .nav-item{
+                margin-left: 10px;
+                margin-right: 10px;
+            }
+            .nav-link{
+                color: white;
+            }
+            li{
+                font-family: Arial, Helvetica, sans-serif;
+                margin:5px;
+            }
+            .card{
+                margin: 0 auto; /* Added */
+                float: none; /* Added */
+                margin-bottom: 10px; /* Added */
+                background-color:rgba(255, 255, 255, 0.1);
+                height: 100%;
+                /*opacity: .2;*/
+                /* background-color: #B4DFE5; Added */
+            }
+
+            
+            
+        </style>
         <title>Dnyanesh Marne</title>
     </head>
     <body>
-        <nav class="navbar navbar-expand-md navbar-light bg-light sticky-top">
+        <nav class="navbar navbar-expand-md navbar-light sticky-top" style="background-image: linear-gradient(to right,#B4DFE5, #303C6C );">
             <div class="container-fluid">
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" 
                     data-bs-target="#navbarResponsive">
@@ -15,27 +43,263 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarResponsive">
                    <ul class="navbar-nav ml-auto">
-                       
                        <li class="nav-item">
-                           <a class="nav-link" href="/dashboard">About</a>
+                           <a class="nav-link" href="#About">About</a>
                        </li>
                        <li class="nav-item ">
-                           <a class="nav-link" href="#">Experience</a>
+                           <a class="nav-link" href="#Experience">Experience</a>
                        </li>
                        <li class="nav-item">
-                           <a class="nav-link" href="#">Skills</a>
+                           <a class="nav-link" href="#Skills">Skills</a>
                        </li>
                        <li class="nav-item">
-                           <a class="nav-link" href="/signup">Interests</a>
+                           <a class="nav-link" href="#Interests">Interests</a>
                        </li>
                        <li class="nav-item">
-                           <a class="nav-link" href="/login">Contact</a>
+                           <a class="nav-link" href="#Contact">Contact</a>
                        </li>
                        
                    </ul>
                 </div>
             </div>   
-           </nav>
+        </nav>
+       <main role="main">
+        <!--d-flex h-100 p-3 mx-auto-->
+        <div class="container-fluid h-100" style="background-image: linear-gradient(to right,#FBE8A6, #E27D60 ); color: #303C6C;">
+        <div class="container vh-100 " id="About">
+            <div class="row h-100 align-items-start">
+                <div class="col col-12 col-sm-12 col-md-6 col-lg-8 col-xl-8 align-self-start">
+                    <div style="margin-top: 10%;"><h6 style="margin-left:0.6%;">Hello, I am</h6>
+                    <h1 class="display-1" style="font-family: Arial black, Helvetica, sans-serif;">Dnyanesh</h1>
+                    <h3 class="display-3" style="font-family: Arial black, Helvetica, sans-serif;">Marne.</h3>
+                    <p class="text-muted" style="margin-left:0.6%;">Software Engineer | Salesforce Developer</p>
+                    </div>
+                    <br>
+                    <B style="font-size:20px;">I am currently in my master's program in Computer Science at Clemson University.<br> 
+                        Previously worked as a Salesforce Developer for three years and nine months at Accenture.<br>
+                        A generalist software engineer who loves to build applications.<br>
+                        Apart from programming, you might catch me playing games and soccer.</B>    
+                </div>
+                <div class="col col-12 col-sm-12 col-md-6 col-lg-4 col-xl-4 align-self-start">
+
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid" id="Experience">
+            <h1 style="margin-top: 7%;">Experience</h1>
+            <div class="row no-gutters">
+                <div class="col col-12 col-md-6 col-lg-8 align-self-start">
+                    <ul class="list-group">
+                        <li class="list-group-item list-group-item-primary" style="background-color: #303C6C; color: white;"><B>Software Engineer Intern, Clemson University International Center for Automotive Research </B></li>
+                    </ul>                    
+                </div>
+                <div class="col col-12 col-md-6 col-lg-4 align-self-start">
+                    <ul class="list-group">
+                        <li class="list-group-item list-group-item-primary" style="background-color: #303C6C; color: white;">April 2022 - Current </li>
+                    </ul>    
+                </div>
+                <div class="col col-12 col-md-6 col-lg-8  align-self-start">
+                    <ul>
+                        <li >Developing full stack web application to visualize and modify robotic maps for robot navigation.</li>
+                        <li >Developed back-end using <B>Python flask</B> framework integrated with <B>SQL database</B> resulting in secure file sharing and scalable integrations.</li>
+                        <li >Designed <B>REST API</B> utilized to infer Deep learning model with low latency. </li>
+                        <li >Created and managing the Linux server for web application with deployments using <B>Docker</B> and <B>Kubernetes</B> making deployments easier and scalable.</li>
+                        <br>
+                        <B style="color:black">The progress so far resulted in giving researchers a platform to share and visualize robotic 3d maps and is now headed towards creating a cloud platform to automate and control robots to complete tasks. </B>
+              
+                    </ul>
+                </div>
+                <div class="col col-12 col-md-6 col-lg-4 align-self-start">
+                    <img src="mapvis.png" class="img-fluid mt-2 mb-2" alt="one of the map visualization on the platform">
+                </div>
+                <br>
+                <div class="col col-12 col-md-6 col-lg-8 align-self-start">
+                    <ul class="list-group">
+                        <li class="list-group-item list-group-item-primary" style="background-color: #303C6C; color: white;"><B>Salesforce Developer, Accenture </B></li>
+                    </ul>                    
+                </div>
+                <div class="col col-12 col-md-6 col-lg-4 align-self-start">
+                    <ul class="list-group">
+                        <li class="list-group-item list-group-item-primary" style="background-color: #303C6C; color: white;">November 2013 - July 2017 </li>
+                    </ul>    
+                </div>
+                <div class="col col-12 col-md-6 col-lg-8  align-self-start">
+                    <ul>
+                        <!--li>Successfully delivered three major releases of Salesforce application with an average of 3000 customer visits per week and integrated with three external systems.</li-->
+                        <li>Modified Apex trigger framework using Object-Oriented programming concepts to <B>reduce memory usage and queries to the database resulting in 30 percent faster calculations</B> after data entries and ease of scaling.</li>
+                        <li>Implemented <B>REST API</B> to integrate DocuSign, and PeopleSoft with the Salesforce environment.</li>
+                        <!--li>Established efficient SQL queries to get data from the database and present it to users and allow them to modify.</li-->
+                        <!--li>Optimized the application by minimizing underlying bugs in Apex codebase to achieve application correctness.</li-->
+                        <!--li>Worked on Salesforce configurations such as flows, workflows, and process builder.</li-->
+                        <!--li>Designed the Salesforce Data Model incorporating custom objects, security, custom metadata, validation rules.</li-->
+                        <li>Transformed the old user interface with new and improved <B>Salesforce lightning</B> for dynamic updates on the page without refreshing it <B>reducing the navigation process time on the page by 50 percent.</B></li>
+                        <li>Designed <B>JavaScript, HTML </B>and <B>Visual Force</B> frontend for application in the managed package community.</li>
+                        <li>Worked in <B>Agile</B> and <B>Scrum</B> development for requirement analysis, application development and deployment.</li>
+                        <li>Handled DevOps operations for developer branch to test branches using <B>Git</B> version control.</li><br>
+                        <B style="color:black">The successful release of the project during the COVID pandemic resulted in acquiring a more extensive project from the client, extending the partnership.</B>
+                    </ul>
+                </div>
+                <div class="col col-12 col-md-6 col-lg-4 align-self-start" style="color: white;">
+                    <div class="row">
+                        <div class="col">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="50%" height="99%" fill="currentColor" class="bi bi-server m-2" viewBox="0 0 16 16">
+                                <path d="M1.333 2.667C1.333 1.194 4.318 0 8 0s6.667 1.194 6.667 2.667V4c0 1.473-2.985 2.667-6.667 2.667S1.333 5.473 1.333 4V2.667z"/>
+                                <path d="M1.333 6.334v3C1.333 10.805 4.318 12 8 12s6.667-1.194 6.667-2.667V6.334a6.51 6.51 0 0 1-1.458.79C11.81 7.684 9.967 8 8 8c-1.966 0-3.809-.317-5.208-.876a6.508 6.508 0 0 1-1.458-.79z"/>
+                                <path d="M14.667 11.668a6.51 6.51 0 0 1-1.458.789c-1.4.56-3.242.876-5.21.876-1.966 0-3.809-.316-5.208-.876a6.51 6.51 0 0 1-1.458-.79v1.666C1.333 14.806 4.318 16 8 16s6.667-1.194 6.667-2.667v-1.665z"/>
+                              </svg>
+                        </div>
+                        <div class="col">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="50%" height="99%" fill="currentColor" class="bi bi-cloud m-2" viewBox="0 0 16 16">
+                                <path d="M4.406 3.342A5.53 5.53 0 0 1 8 2c2.69 0 4.923 2 5.166 4.579C14.758 6.804 16 8.137 16 9.773 16 11.569 14.502 13 12.687 13H3.781C1.708 13 0 11.366 0 9.318c0-1.763 1.266-3.223 2.942-3.593.143-.863.698-1.723 1.464-2.383zm.653.757c-.757.653-1.153 1.44-1.153 2.056v.448l-.445.049C2.064 6.805 1 7.952 1 9.318 1 10.785 2.23 12 3.781 12h8.906C13.98 12 15 10.988 15 9.773c0-1.216-1.02-2.228-2.313-2.228h-.5v-.5C12.188 4.825 10.328 3 8 3a4.53 4.53 0 0 0-2.941 1.1z"/>
+                              </svg>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="50%" height="99%" fill="currentColor" class="bi bi-filetype-html m-2" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd" d="M14 4.5V11h-1V4.5h-2A1.5 1.5 0 0 1 9.5 3V1H4a1 1 0 0 0-1 1v9H2V2a2 2 0 0 1 2-2h5.5L14 4.5Zm-9.736 7.35v3.999h-.791v-1.714H1.79v1.714H1V11.85h.791v1.626h1.682V11.85h.79Zm2.251.662v3.337h-.794v-3.337H4.588v-.662h3.064v.662H6.515Zm2.176 3.337v-2.66h.038l.952 2.159h.516l.946-2.16h.038v2.661h.715V11.85h-.8l-1.14 2.596H9.93L8.79 11.85h-.805v3.999h.706Zm4.71-.674h1.696v.674H12.61V11.85h.79v3.325Z"/>
+                              </svg>
+                        </div>
+                        <div class="col">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="50%" height="99%" fill="currentColor" class="bi bi-filetype-js m-2" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd" d="M14 4.5V14a2 2 0 0 1-2 2H8v-1h4a1 1 0 0 0 1-1V4.5h-2A1.5 1.5 0 0 1 9.5 3V1H4a1 1 0 0 0-1 1v9H2V2a2 2 0 0 1 2-2h5.5L14 4.5ZM3.186 15.29a1.176 1.176 0 0 1-.111-.449h.765a.578.578 0 0 0 .255.384c.07.049.153.087.249.114.095.028.202.041.319.041.164 0 .302-.023.413-.07a.559.559 0 0 0 .255-.193.507.507 0 0 0 .085-.29.387.387 0 0 0-.153-.326c-.101-.08-.255-.144-.462-.193l-.619-.143a1.72 1.72 0 0 1-.539-.214 1.001 1.001 0 0 1-.351-.367 1.068 1.068 0 0 1-.123-.524c0-.244.063-.457.19-.639.127-.181.303-.322.528-.422.224-.1.483-.149.776-.149.305 0 .564.05.78.152.216.102.383.239.5.41.12.17.186.359.2.566h-.75a.56.56 0 0 0-.12-.258.624.624 0 0 0-.247-.181.923.923 0 0 0-.369-.068c-.217 0-.388.05-.513.152a.472.472 0 0 0-.184.384c0 .121.048.22.143.3a.97.97 0 0 0 .405.175l.62.143c.218.05.406.12.566.211.16.09.285.21.375.358.09.148.135.335.135.56 0 .247-.063.466-.188.656a1.216 1.216 0 0 1-.539.439c-.234.105-.52.158-.858.158-.254 0-.476-.03-.665-.09a1.404 1.404 0 0 1-.478-.252 1.13 1.13 0 0 1-.29-.375Zm-3.104-.033A1.32 1.32 0 0 1 0 14.791h.765a.576.576 0 0 0 .073.27.499.499 0 0 0 .454.246c.19 0 .33-.055.422-.164.092-.11.138-.265.138-.466v-2.745h.79v2.725c0 .44-.119.774-.357 1.005-.236.23-.564.345-.984.345a1.59 1.59 0 0 1-.569-.094 1.145 1.145 0 0 1-.407-.266 1.14 1.14 0 0 1-.243-.39Z"/>
+                              </svg>
+                        </div>
+                    </div>
+                </div>
+                <br>
+                <div class="col col-12 col-md-12 col-lg-12 align-self-start">
+                    <ul class="list-group">
+                        <li class="list-group-item list-group-item-primary" style="background-color: #303C6C; color: white;"><B>Academic Projects </B></li>
+                    </ul> 
+                    <!--div class="col-12 col-sm-8 col-lg-10 align-self-start"-->
+                        <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-3 g-4 m-2">
+                            <div class="col">
+                                <div class="card" style="width: 18rem;">
+                                    <div class="card-body">
+                                      <h5 class="card-title">Deep Learning</h5>
+                                      <h6 class="card-subtitle mb-2 text-muted">CNN, LSTM, DCGAN, WGAN</h6>
+                                      <p class="card-text">Implemented various Deep learning models to classify images, produce captions to describe the video, and create fake photos.</p>
+                                      <a href="https://github.com/DnyaneshMarne/Deep_Learning" class="card-link" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
+                                        <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
+                                      </svg></a>
+                                    </div>
+                                  </div>
+                                  
+                            </div>
+                            <div class="col">
+                                <div class="card" style="width: 18rem;">
+                                    <div class="card-body">
+                                      <h5 class="card-title">Machine Learning</h5>
+                                      <h6 class="card-subtitle mb-2 text-muted">KNN, Logistic regression, Linear regression</h6>
+                                      <p class="card-text">Implemented supervised and unsupervised machine learning algorithms from scratch.</p>
+                                      <a href="https://github.com/DnyaneshMarne/Machine_learning" class="card-link" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
+                                        <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
+                                      </svg></a>
+                                    </div>
+                                  </div>
+                                  
+                            </div>
+                            <div class="col">
+                                <div class="card" style="width: 18rem;">
+                                    <div class="card-body">
+                                      <h5 class="card-title">Parallel Computing</h5>
+                                      <h6 class="card-subtitle mb-2 text-muted">Message passing interface (MPI)</h6>
+                                      <p class="card-text">Implemented different MPI concepts to compute data parallelly and reduce the time required to run nonconcurrent programs.</p>
+                                      <a href="https://github.com/DnyaneshMarne/Parallel_Computing" class="card-link" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
+                                        <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
+                                      </svg></a>
+                                    </div>
+                                  </div>
+                                  
+                            </div>
+                            <div class="col">
+                                <div class="card" style="width: 18rem;">
+                                    <div class="card-body">
+                                      <h5 class="card-title">Portable Knock Detecting Notifier</h5>
+                                      <h6 class="card-subtitle mb-2 text-muted">Arduino based IoT device</h6>
+                                      <p class="card-text">An Arduino based device coupled with vibration sensor and android application. Allowing the user to associate the number of knocks on the surface where the device is placed to invoke IoT applications. </p>
+                                      <!--a href="https://github.com/DnyaneshMarne/Deep_Learning" class="card-link" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
+                                        <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
+                                      </svg></a-->
+                                    </div>
+                                  </div>
+                            </div>
+                            <div class="col">
+                                <div class="card" style="width: 18rem;">
+                                    <div class="card-body">
+                                      <h5 class="card-title">Soccer Tournament Registration</h5>
+                                      <h6 class="card-subtitle mb-2 text-muted">PHP MySql website</h6>
+                                      <p class="card-text">A PHP MySQL database website hosted on an Apache server allows organizers to create local tournaments and soccer lovers to register for those tournaments.   </p>
+                                      <!--a href="https://github.com/DnyaneshMarne/Deep_Learning" class="card-link" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
+                                        <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
+                                      </svg></a-->
+                                    </div>
+                                  </div>
+                            </div>
+                            <div class="col">
+                                <div class="card" style="width: 18rem;">
+                                    <div class="card-body">
+                                      <h5 class="card-title">Zoo Management</h5>
+                                      <h6 class="card-subtitle mb-2 text-muted">Java NoSQL Desktop application</h6>
+                                      <p class="card-text">A desktop application was created as an ERP system to manage the local zoo.</p>
+                                      <!--a href="https://github.com/DnyaneshMarne/Deep_Learning" class="card-link" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
+                                        <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
+                                      </svg></a-->
+                                    </div>
+                                  </div>
+                            </div>
+                        </div>
+                    <!--/div-->                      
+                </div>
+                <div class="col col-12 col-md-12 col-lg-12 align-self-start">
+
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid" id="Skills">
+            <h1 style="margin-top: 7%;">Skills</h1><br>
+            <div class="row" style="font-size: 20px;">
+                
+                <div class="col col-12 col-md-3 col-lg-3 align-self-start m-2">
+                    <img src="Python-logo-notext.svg" width="20" height="20" class="bi bi-cloud" viewBox="0 0 16 16">
+                         Programming Languages :
+                </div>
+                <div class="col col-12 col-md-8 col-lg-8 align-self-start m-2">
+                    Python, Apex, Java, C++
+                </div>
+                <div class="col col-12 col-md-3 col-lg-3 align-self-start m-2">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-cloud" viewBox="0 0 16 16">
+                        <path d="M4.406 3.342A5.53 5.53 0 0 1 8 2c2.69 0 4.923 2 5.166 4.579C14.758 6.804 16 8.137 16 9.773 16 11.569 14.502 13 12.687 13H3.781C1.708 13 0 11.366 0 9.318c0-1.763 1.266-3.223 2.942-3.593.143-.863.698-1.723 1.464-2.383zm.653.757c-.757.653-1.153 1.44-1.153 2.056v.448l-.445.049C2.064 6.805 1 7.952 1 9.318 1 10.785 2.23 12 3.781 12h8.906C13.98 12 15 10.988 15 9.773c0-1.216-1.02-2.228-2.313-2.228h-.5v-.5C12.188 4.825 10.328 3 8 3a4.53 4.53 0 0 0-2.941 1.1z"/>
+                      </svg>  Clouds :
+                </div>
+                <div class="col col-12 col-md-8 col-lg-8 align-self-start m-2">
+                    Salesforce, AWS
+                </div>
+                <div class="col col-12 col-md-3 col-lg-3 align-self-start m-2">
+                    <img src="html-5-logo-svgrepo-com.svg" width="20" height="20" fill="currentColor" class="bi bi-cloud" viewBox="0 0 16 16">
+                      Web Development :
+                </div>
+                <div class="col col-12 col-md-8 col-lg-8 align-self-start m-2">
+                    HTML, CSS, JavaScript, Flask
+                </div>
+                <div class="col col-12 col-md-3 col-lg-3 align-self-start m-2">
+                    <img src="Docker-Logo-White-RGB_Moby.png" width="20" height="20"  class="bi bi-cloud" viewBox="0 0 16 16">
+                          Dev Ops :
+                </div>
+                <div class="col col-12 col-md-8 col-lg-8 align-self-start m-2">
+                    Git, Docker, Kubernetes
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid vh-100" id="Interests">
+            <h1 style="margin-top: 7%;">Interests</h1>
+        </div>
+        <div class="container-fluid vh-100" id="Contact">
+            <h1 style="margin-top: 7%;">Contact</h1>
+        </div>
+        </div>
+        </main>
         <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
